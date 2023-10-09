@@ -2,7 +2,7 @@ const route = require('express').Router();
 const { addNewUser, getAllUser, salaryAboveThirtyThousand, experienceAboveTwoYears, gradAfterFifteenExpAboveOneYear, updateSalary, deleteEmp } = require("../controller/userController");
 
 //Create a database , give it name like ""Human_Resource"". Create a collection inside this named ""employee""
-route.post('/query1', addNewUser)
+route.get('/query1', addNewUser)
 
 //Query the collection ""employee"" and list all the documents
 route.get('/query2', getAllUser)
